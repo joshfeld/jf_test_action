@@ -2,8 +2,9 @@ import os
 
 
 def main():
-    print(os.environ["INPUT_COMMIT-DIFF"])
     print(os.environ["INPUT_BRANCH-NAME"])
+    behind = os.environ["INPUT_COMMIT-DIFF"].split(' ')
+    print(behind)
 
 
 if __name__ == "__main__":
