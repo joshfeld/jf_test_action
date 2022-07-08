@@ -13,6 +13,3 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.commit-diff }}
-    - ${{ inputs.branch-name }}
